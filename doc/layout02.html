@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 레이아웃 02</title>
+    <style>
+
+        /* reset */
+        * {margin: 0; padding: 0;box-sizing: border-box;font-size: inherit;font-weight: normal;color: inherit;}
+        ul,ol {list-style: none;}
+        a {text-decoration: none;}
+        img {vertical-align: middle;}
+        body{line-height: 1;}
+
+        /* basic float layout */
+
+        h1 {font-size: 30px;text-align: center;margin-bottom: 100px;}
+
+        .sc02, .sc04, .sc06 {
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .sc03, .sc05 {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .sc02 h2, .sc03 h2, .sc04 h2, .sc05 h2,.sc06 h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .sc02>p, .sc03>p, .sc04>p, .sc05>p, .sc06>p {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        .sc02 .container, .sc03 .container, .sc04 .container, .sc05 .container, .sc06 .container {
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+        .sc02 .container, .sc03 .container, .sc04 .container, .sc05 .container, .sc06 .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .sc02 figure {
+            float: left;
+            width: 50%;
+            padding: 0 15px;
+        }
+
+        .sc03 figure {
+            float: left;
+            width: 33.333333%;
+            padding: 0 15px;
+        }
+
+        .sc04 figure {
+            float: left;
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .sc05 figure {
+            float: left;
+            width: 20%;
+            padding: 0 15px;
+        }
+
+        .sc06 figure {
+            float: left;
+            width: 16.666666%;
+            padding: 0 15px;
+        }
+
+
+
+        .sc02 figure img, .sc03 figure img,  .sc04 figure img,  .sc05 figure img,  .sc06 figure img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .sc02 figure p, .sc03 figure p, .sc04 figure p, .sc05 figure p, .sc06 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+
+        .sc02 figure a, .sc03 figure a, .sc04 figure a, .sc05 figure a, .sc06 figure a {
+            display: block;
+            margin: 0 auto;
+            width: 160px;
+            height: 30px;
+            background-color: #333;
+            color: #fff;
+            line-height: 30px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>EDIYA COFFEE</h1>
+
+
+    <section class="sc02">
+        <h2>COFFEE MIX</h2>
+        <p>COFFEE MIX</p>
+        <div class="container">
+            <figure>
+                <img src="../img/mix_n01.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/mix_n02.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+        </div>
+    </section>
+
+
+    <section class="sc03">
+        <h2>AMERICANO</h2>
+        <p>AMERICANO</p>
+        <div class="container">
+            <figure>
+                <img src="../img/ame_n01.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/ame__n02.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/ame__n03.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+        </div>
+    </section>
+
+    <section class="sc04">
+        <h2>CAFFE LATTE</h2>
+        <p>CAFFE LATTE</p>
+        <div class="container">
+            <figure>
+                <img src="../img/latte_n01.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/latte_n02.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/latte_n03.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/latte_n04.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+        </div>
+    </section>
+
+    <section class="sc05">
+        <h2>MACARON</h2>
+        <p>MACARON</p>
+        <div class="container">
+            <figure>
+                <img src="../img/mac_01.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/mac_02.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/mac_03.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/mac_04.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/mac_05.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+        </div>
+    </section>
+
+    <section class="sc06">
+        <h2>BAKERY</h2>
+        <p>BAKERY</p>
+        <div class="container">
+            <figure>
+                <img src="../img/bak_n01.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/bak_n02.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/bak_n03.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/bak_n04.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/bak_n05.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+            <figure>
+                <img src="../img/bak_n06.png" alt="">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">more</a>
+            </figure>
+        </div>
+    </section>
+</body>
+</html>
